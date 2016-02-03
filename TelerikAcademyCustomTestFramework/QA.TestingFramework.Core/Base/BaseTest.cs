@@ -90,7 +90,7 @@
             this.Browser.Window.Maximize();
             this.Browser.AutoDomRefresh = true;
             this.Browser.AutoWaitUntilReady = true;
-            this.Browser.CommandTimeOut = 30000;
+            this.Browser.CommandTimeOut = 60000;
         }
 
         private void ClearBrowserCache()
