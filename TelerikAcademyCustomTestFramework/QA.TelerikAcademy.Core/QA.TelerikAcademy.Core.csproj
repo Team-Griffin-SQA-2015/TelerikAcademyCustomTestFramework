@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AAE3874C-8009-4A95-839E-9D0F8D0537DB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QA.TelerikAcademy.Core</RootNamespace>
+    <AssemblyName>QA.TelerikAcademy.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ArtOfTest.WebAii, Version=2015.3.1015.0, Culture=neutral, PublicKeyToken=4fd5f65be123776c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\ArtOfTest.WebAii.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Telerik.TestingFramework.Controls.KendoUI, Version=2015.3.1015.0, Culture=neutral, PublicKeyToken=528163f3e645de45, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Telerik.TestingFramework.Controls.KendoUI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants\Attributes\Modules.cs" />
+    <Compile Include="Constants\Attributes\Owners.cs" />
+    <Compile Include="Constants\Attributes\Priorities.cs" />
+    <Compile Include="Constants\Attributes\TestCaseId.cs" />
+    <Compile Include="Constants\Pages\AboutConstants.cs" />
+    <Compile Include="Constants\Pages\BirthdayConstants.cs" />
+    <Compile Include="Constants\Pages\CandidateExamConstants.cs" />
+    <Compile Include="Constants\Pages\CandidateFilesConstants.cs" />
+    <Compile Include="Constants\Pages\CandidateInformationConstants.cs" />
+    <Compile Include="Constants\Pages\CheckinDevicesConstants.cs" />
+    <Compile Include="Constants\Pages\CityIdConstants.cs" />
+    <Compile Include="Constants\Pages\DelayConstants.cs" />
+    <Compile Include="Constants\Pages\DynamicPagesConstants.cs" />
+    <Compile Include="Constants\Pages\EventsConstants.cs" />
+    <Compile Include="Constants\Pages\FeedbackReportsConstants.cs" />
+    <Compile Include="Constants\Pages\FilesConstants.cs" />
+    <Compile Include="Constants\Pages\KendoWindowConstants.cs" />
+    <Compile Include="Constants\Pages\MainPageConstants.cs" />
+    <Compile Include="Constants\Pages\PhoneConstants.cs" />
+    <Compile Include="Constants\Pages\SearchTermsConstants.cs" />
+    <Compile Include="Constants\Pages\SeasonsConstants.cs" />
+    <Compile Include="Constants\Pages\SecondNameConstants.cs" />
+    <Compile Include="Constants\Pages\SurveysConstants.cs" />
+    <Compile Include="Enumerations\CandidateType.cs" />
+    <Compile Include="Enumerations\SearchTermType.cs" />
+    <Compile Include="Enumerations\SurveyQuestionType.cs" />
+    <Compile Include="Enumerations\SurveyType.cs" />
+    <Compile Include="Enumerations\TrainingRoomType.cs" />
+    <Compile Include="Facades\AcademyLoginProvider.cs" />
+    <Compile Include="Facades\AvatarsService.cs" />
+    <Compile Include="Facades\CandidateExamsService.cs" />
+    <Compile Include="Facades\CandidateFormService.cs" />
+    <Compile Include="Facades\CheckinDevicesService.cs" />
+    <Compile Include="Facades\ChangeEmailService.cs" />
+    <Compile Include="Facades\ChangePasswordService.cs" />
+    <Compile Include="Facades\DynamicPagesService.cs" />
+    <Compile Include="Facades\EventsService.cs" />
+    <Compile Include="Facades\FeedbackReportsFacade.cs" />
+    <Compile Include="Facades\FilesService.cs" />
+    <Compile Include="Facades\KendoGrid.cs" />
+    <Compile Include="Facades\MainService.cs" />
+    <Compile Include="Facades\SearchTermsService.cs" />
+    <Compile Include="Facades\SeasonsService.cs" />
+    <Compile Include="Facades\SettingsFacade.cs" />
+    <Compile Include="Facades\SettingsService.cs" />
+    <Compile Include="Facades\SurveysService.cs" />
+    <Compile Include="Facades\TrainingRoomService.cs" />
+    <Compile Include="Facades\UpperNavigationSectionMap.cs" />
+    <Compile Include="Constants\Pages\ChangeEmailConstants.cs" />
+    <Compile Include="Constants\Pages\ChangePasswordConstants.cs" />
+    <Compile Include="Constants\Pages\FacebookUrlConstants.cs" />
+    <Compile Include="Constants\Pages\FacultyNameConstants.cs" />
+    <Compile Include="Constants\Pages\FacultyNumberConstants.cs" />
+    <Compile Include="Constants\Pages\FirstNameConstants.cs" />
+    <Compile Include="Constants\Pages\FirstNameEnConstants.cs" />
+    <Compile Include="Constants\Pages\GitHubUrlConstants.cs" />
+    <Compile Include="Constants\Pages\GooglePlusUrlConstants.cs" />
+    <Compile Include="Constants\Pages\LastNameConstants.cs" />
+    <Compile Include="Constants\Pages\LastNameEnConstants.cs" />
+    <Compile Include="Constants\Pages\LinkedInUrlConstants.cs" />
+    <Compile Include="Constants\Pages\SchoolNameConstants.cs" />
+    <Compile Include="Constants\Pages\SkypeUsernameConstants.cs" />
+    <Compile Include="Constants\Pages\StackOverflowUrlConstants.cs" />
+    <Compile Include="Constants\Pages\TrainingRoomConstants.cs" />
+    <Compile Include="Constants\Pages\TwitterUrlConstants.cs" />
+    <Compile Include="Constants\Pages\UniversityIdConstants.cs" />
+    <Compile Include="Constants\Pages\UniversitySpecialtyConstants.cs" />
+    <Compile Include="Constants\Pages\UploadNewAvatarImageConstants.cs" />
+    <Compile Include="Constants\Pages\WebsiteConstants.cs" />
+    <Compile Include="Factories\CandidateFactory.cs" />
+    <Compile Include="Factories\SearchTermsFactory.cs" />
+    <Compile Include="Factories\SurveyQuestionFactory.cs" />
+    <Compile Include="Factories\SurveysFactory.cs" />
+    <Compile Include="Factories\TrainingRoomsFactory.cs" />
+    <Compile Include="Pages\AdminPage\AdminPage.cs" />
+    <Compile Include="Pages\AdminPage\AdminPageMap.cs" />
+    <Compile Include="Pages\AdminPage\AdminPageValidator.cs" />
+    <Compile Include="Pages\AdminSettingsPage\AdminSettingsPage.cs" />
+    <Compile Include="Pages\AdminSettingsPage\AdminSettingsPageMap.cs" />
+    <Compile Include="Pages\AdminSettingsPage\AdminSettingsPageValidator.cs" />
+    <Compile Include="Pages\AvatarsPage\AvatarsPage.cs" />
+    <Compile Include="Pages\AvatarsPage\AvatarsPageMap.cs" />
+    <Compile Include="Pages\AvatarsPage\AvatarsPageValidator.cs" />
+    <Compile Include="Pages\CandidateExamsPage\CandidateExamsPageMap.cs" />
+    <Compile Include="Pages\CandidateExamsPage\CandidateExamsPage.cs" />
+    <Compile Include="Pages\CandidateExamsPage\CandidateExamsPageValidator.cs" />
+    <Compile Include="Pages\CandidateFormPage\CandidateFormPage.cs" />
+    <Compile Include="Pages\CandidateFormPage\CandidateFormPageMap.cs" />
+    <Compile Include="Pages\CandidateFormPage\CandidateFormPageValidator.cs" />
+    <Compile Include="Pages\CheckinDevicesPage\CheckinDevicesPage.cs" />
+    <Compile Include="Pages\CheckinDevicesPage\CheckinDevicesPageMap.cs" />
+    <Compile Include="Pages\CheckinDevicesPage\CheckinDevicesPageValidator.cs" />
+    <Compile Include="Pages\ChangeEmailPage\ChangeEmailPage.cs" />
+    <Compile Include="Pages\ChangeEmailPage\ChangeEmailPageMap.cs" />
+    <Compile Include="Pages\ChangeEmailPage\ChangeEmailPageValidator.cs" />
+    <Compile Include="Pages\ChangePasswordPage\ChangePasswordPage.cs" />
+    <Compile Include="Pages\ChangePasswordPage\ChangePasswordPageMap.cs" />
+    <Compile Include="Pages\ChangePasswordPage\ChangePasswordPageValidator.cs" />
+    <Compile Include="Pages\DynamicPagesPage\DynamicPagesPage.cs" />
+    <Compile Include="Pages\DynamicPagesPage\DynamicPagesPageMap.cs" />
+    <Compile Include="Pages\DynamicPagesPage\DynamicPagesPageValidator.cs" />
+    <Compile Include="Pages\EventsPage\EventsPage.cs" />
+    <Compile Include="Pages\EventsPage\EventsPageMap.cs" />
+    <Compile Include="Pages\EventsPage\EventsPageValidator.cs" />
+    <Compile Include="Pages\FeedbackReportsPage\FeedbackReportsPage.cs" />
+    <Compile Include="Pages\FeedbackReportsPage\FeedbackReportsPageMap.cs" />
+    <Compile Include="Pages\FeedbackReportsPage\FeedbackReportsPageValidator.cs" />
+    <Compile Include="Pages\FilesPage\FilesPage.cs" />
+    <Compile Include="Pages\FilesPage\FilesPageMap.cs" />
+    <Compile Include="Pages\FilesPage\FilesPageValidator.cs" />
+    <Compile Include="Pages\KidsCandidateFormPage\KidsCandidateFormPage.cs" />
+    <Compile Include="Pages\KidsCandidateFormPage\KidsCandidateFormPageMap.cs" />
+    <Compile Include="Pages\KidsCandidateFormPage\KidsCandidateFormPageValidator.cs" />
+    <Compile Include="Pages\LoginPage\LoginPage.cs" />
+    <Compile Include="Pages\LoginPage\LoginPageMap.cs" />
+    <Compile Include="Pages\LoginPage\LoginPageValidator.cs" />
+    <Compile Include="Pages\MainPage\MainPage.cs" />
+    <Compile Include="Pages\MainPage\MainPageMap.cs" />
+    <Compile Include="Pages\MainPage\MainPageValidator.cs" />
+    <Compile Include="Pages\SearchTermsPage\SearchTermsPage.cs" />
+    <Compile Include="Pages\SearchTermsPage\SearchTermsPageMap.cs" />
+    <Compile Include="Pages\SearchTermsPage\SearchTermsPageValidator.cs" />
+    <Compile Include="Pages\SeasonsPage\SeasonsPage.cs" />
+    <Compile Include="Pages\SeasonsPage\SeasonsPageMap.cs" />
+    <Compile Include="Pages\SeasonsPage\SeasonsPageValidator.cs" />
+    <Compile Include="Pages\SendFeedbackPage\SendFeedbackPage.cs" />
+    <Compile Include="Pages\SendFeedbackPage\SendFeedbackPageMap.cs" />
+    <Compile Include="Pages\SendFeedbackPage\SendFeedbackPageValidator.cs" />
+    <Compile Include="Pages\SettingsPage\SettingsPage.cs" />
+    <Compile Include="Pages\SettingsPage\SettingsPageMap.cs" />
+    <Compile Include="Pages\SettingsPage\SettingsPageValidator.cs" />
+    <Compile Include="Pages\SurveysPage\SurveysPage.cs" />
+    <Compile Include="Pages\SurveysPage\SurveysPageMap.cs" />
+    <Compile Include="Pages\SurveysPage\SurveysPageValidator.cs" />
+    <Compile Include="Pages\TrainingRoomsPage\TrainingRoomsPage.cs" />
+    <Compile Include="Pages\TrainingRoomsPage\TrainingRoomsPageMap.cs" />
+    <Compile Include="Pages\TrainingRoomsPage\TrainingRoomsPageValidator.cs" />
+    <Compile Include="Pages\UploadPage\UploadPage.cs" />
+    <Compile Include="Pages\UploadPage\UploadPageMap.cs" />
+    <Compile Include="Pages\UploadPage\UploadPageValidator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QA.TestingFramework.Core\QA.TestingFramework.Core.csproj">
+      <Project>{275047d1-821e-4f7d-a6f1-c1f836b593d3}</Project>
+      <Name>QA.TestingFramework.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Items\.gitattributes" />
+    <Content Include="Items\178440.jpg" />
+    <Content Include="Items\cat.jpg" />
+    <Content Include="Items\New Bitmap Image.bmp" />
+    <Content Include="Items\ws_Iron_Man_3_Suit_1920x1080.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Items\TeamGriffinTestStatusReport.docx" />
+    <None Include="Items\testCandidateAdditionalDocument.docx" />
+    <None Include="Items\testCandidateCoverLetter.docx" />
+    <None Include="Items\testCandidateCV.docx" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
